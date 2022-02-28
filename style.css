@@ -1,0 +1,629 @@
+/*############ defult css ############*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body,h1,h2,h3,h4,h5,h6,p,a,span,button{
+    font-family: 'Work Sans', sans-serif;
+    
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    padding: 0;
+    margin: 0
+}
+ul li{
+    list-style: none;
+}
+input:focus{
+    box-shadow: none;
+}
+
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.clear-fix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.flot-left{
+    float: left;
+}
+.flot-right{
+    float: right;
+}
+.dufolt-btn {
+    padding: 20px 34px;
+    margin-right: 36px;
+    display: inline-block;
+    font-size: 20.8px;
+    background-color: #fcfcfc;
+    border-color: 1px solid #fcfcfc;
+    color: #7d7d7d;
+    font-weight: 500;
+    border-radius: 8px;
+}
+/*############ defult css end ############*/
+/*############ header area start ############*/
+.header {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding: 10px 0px;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+}
+.header-logo{
+    width: 30%;
+}
+.header-menu{
+    width: 60%;
+}
+.header-button{
+    width: 10%;
+}
+
+
+.header-logo img {
+    width: 45px;
+    float: left;
+}
+.header-logo span {
+    color: #010101;
+    font-size: 26px;
+    margin-left: 7px;
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 5px;
+    transition: .5s;
+}
+
+.header-logo span:hover{
+    color: #cccccc;
+}
+.main-menu ul li {
+    display: inline-block;
+    margin-left: -4px;
+    position: relative;
+}
+.main-menu span i{
+    display: none;
+}
+.menu-chac{
+    display: none;
+}
+.main-menu ul li a {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 45px;
+    padding: 0 15px;
+    color: #010101;
+}
+.main-menu ul li a:hover{
+    color:#6278df;
+}
+
+.header-button a {
+    display: inline-block;
+    border: 2px solid #6278DF;
+    padding: 9px 27px;
+    border-radius: 9px;
+    font-weight: 600;
+    background: none;
+    color: #6278df;
+    transition: .5s;
+    margin-top: 2px;
+}
+.header-button a:hover{
+    background-color: #6278df;
+    color: #fff;
+    box-shadow: 3px 4px 38px 0px rgba(98, 120, 223, .2);
+}
+/*############ drowpdown area end ############*/
+.main-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.main-menu ul li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*############ header area end ############*/
+/*############ banner area start ############*/
+
+.banner {
+    background: url("./img/mbr-4.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 217px 0px 150px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    position: relative;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+}
+.banner h1 {
+    font-size: 57.6px;
+    font-weight: 700;
+    margin: 37px 0;
+}
+.banner h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.dufolt-btn {
+    padding: 20px 34px;
+    margin-right: 36px;
+    display: inline-block;
+    font-size: 20.8px;
+    background-color: #fcfcfc;
+    border-color: 1px solid #fcfcfc;
+    color: #7d7d7d;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: .5s;
+}
+.dufolt-btn:hover{
+    color: #fff;
+    background-color: #6278df;
+}
+/*############ banner area end ############*/
+/*############ banner bottom area start ############*/
+.banner-bottom {
+    background: #F7F9FF;
+    padding: 100px 0;
+}
+.left-area{
+    width: 48%;
+}
+.right-area {
+    width: 48%;
+    margin-left: 20px;
+}
+.banner-bottom h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.banner-bottom p {
+    color: #767676;
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+/*############ banner bottom area end ############*/
+/*############ services area start ############*/
+section.services {
+    background: #fff;
+    padding: 100px 0;
+}
+.services-content h1 {
+    color: #000;
+    font-size: 57.6px;
+    font-weight: 700;
+}
+.services-content p {
+    padding: 24px 0px 48px;
+    color: #767676;
+    font-weight: 300;
+    font-size: 25.6px;
+}
+.services-item{
+    margin-top: 50px;
+}
+.item {
+    width: 31.7%;
+    box-shadow: 3px 4px 38px 0px rgba(98, 120, 223, .2);
+    margin-right: 2.33%;
+    padding: 52px 24px;
+    height: 229px;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+}
+.item:nth-child(3n+3){
+    margin-right: 0;
+}
+.s-icon span {
+    width: 78px;
+    height: 100px;
+    float: left;
+    font-size: 20px;
+    font-size: 48px;
+    color: #6278df;
+}
+.s-icon span {
+	width: 78px;
+	height: 157px;
+	float: left;
+	font-size: 20px;
+	font-size: 48px;
+	color: #6278df;
+}
+.s-content h2 {
+    color: #000000;
+    font-size: 25.6px;
+    font-weight: 500;
+    line-height: 38.4px;
+}
+.s-content p {
+    color: #767676;
+    padding: 24px 0px 0px;
+    font-weight: 300;
+}
+/*############ services area end ############*/
+/*############ priching section area start  ############*/
+.priching-area{
+    background-color: #F7F9FF;
+    padding: 50px 0;
+}
+.services-content h2 {
+    font-size: 57.6px;
+    font-weight: 400;
+}
+.services-content h2 {
+    font-size: 57.6px;
+    font-weight: 400;
+}
+.services-content {
+    margin-bottom: 80px;
+}
+
+.priching-item{
+    width: 32%;
+    margin-right: 2%;
+    background-color: #fff;
+    box-shadow: 3px 4px 38px 0px rgba(98, 120, 223, .2);
+    transition: .5s;
+}
+.priching-item:nth-child(3){
+    margin-right: 0;
+}
+
+.p-hadding{
+    padding: 30px;
+    border-bottom: 1px solid #ddd;
+}
+.p-hadding span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.p-hadding h1{
+    font-weight: 700;
+    font-size: 57.6px;
+}
+.p-hadding h4{
+    font-size: 25.6px;
+    font-weight: 500;
+}
+.p-hadding h5{
+    font-size: 20.8px;
+    padding: 32px 0px 0px;
+    font-weight: 500;
+}
+.p-hadding p{
+    font-size: 20.8px;
+    padding: 16px 0px 8px;
+    font-weight: 300;
+}
+
+.p-content{
+    padding: 30px;
+}
+.p-content ul li {
+    margin: 30px 0;
+    font-size: 20.8px;
+    color: #3F3F3F;
+    display: block;
+}
+.p-content ul span {
+    /* padding: 30px; */
+    color: #6278df;
+    font-weight: 400;
+    font-size: 32px;
+    width: 43px;
+    display: inline-block;
+}
+.p-button .dufolt-btn {
+    box-shadow: 3px 4px 38px 0px rgba(98, 120, 223, .2);
+    width: 70%;
+}
+.priching-item:hover .p-hadding{
+    background-color: #6278df;
+    color: #fff;
+}
+.priching-item:hover .p-button .dufolt-btn{
+    background-color: #6278df;
+    color: #fff;
+}
+/*############ priching section area end  ############*/
+/*############ teem section area start  ############*/
+.teem{
+    padding: 80px 0;
+}
+.member{
+    width: 23%;
+    margin-right: 2%;
+    box-shadow: 3px 4px 38px 0px rgba(98, 120, 223, .2);
+    padding-bottom: 20px ;
+}
+.member:hover{
+    box-shadow: 3px 4px 38px 0px rgba(98, 120, 223, .5);
+
+}
+.member-bio {
+    margin-left: 23px;
+}
+.member:nth-child(4){
+    margin-right: 0;
+}
+.member img {
+    width: 100%;
+}
+
+.member-bio h4 {
+    font-size: 25.6px;
+    line-height: 38.4px;
+    font-weight: 500;
+}
+
+.member-bio p {
+    font-size: 20.8px;
+    color: #767676;
+    font-weight: 300;
+}
+/*############ teem section area end  ############*/
+/*############ newslater section area start   ############*/
+.newslater{
+    background: #F7F9FF;
+    padding: 80px 0;
+}
+.newslater-title p {
+    padding: 0;
+}
+.newslater-title h2 {
+    font-size: 44.8px;
+    padding: 32px 0px 0px;
+    font-weight: 400;
+}
+.main-input {
+    color: #232323;
+    border: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    padding: 22px 24px;
+    border-radius: 6px;
+    margin: 0;
+    box-shadow: 3px 4px 38px 0px rgba(98, 120, 223, .2);
+    width: 344px;
+    font-size: 1.3rem;
+    border: 1px solid #ddd;
+    transition: .5s;
+    box-sizing: border-box;
+
+}
+.newslater-title {
+    margin-bottom: 46px;
+}
+.main-input:focus{
+    border: 1px solid #6278df;
+    box-shadow: 3px 4px 38px 0px rgba(98, 120, 223, .5);
+    outline-offset: 0px;
+    outline: none;
+}
+.submit-btn {
+    color: #fff;
+    padding: 22px 88px;
+    background: #6278df;
+    border: none;
+    font-weight: 600;
+    font-size: 20.8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 6.4px 12.8px;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+.submit-btn:hover{
+    border: 2px solid #6278df;
+    background-color: #fff;
+    color: #6278df;
+    box-shadow: 3px 4px 38px 0px rgba(98, 120, 223, .3);
+}
+
+/*############ newslater section area end  ############*/
+/*############ blog section area start  ############*/
+
+.blog{
+    padding: 100px 0;
+}
+.blog-title{
+    padding: 30px 0;
+}
+.b-title{
+    width: 50%;
+}
+.b-title h2 {
+    font-size: 42.8px;
+    font-weight: 500;
+    color: #000000;
+}
+.b-content{
+    width: 50%;
+    
+
+}
+.b-content h4 {
+    color: #767676;
+    font-size: 20.8px;
+    font-weight: 400;
+    line-height: 31.2px;
+}
+.blog-item {
+    width: 48%;
+    background-color: #fff;
+    box-shadow: 3px 4px 38px 0px rgba(98, 120, 223, .2);
+}
+.blog-item img {
+    width: 312px;
+    height: 224px;
+    float: left;
+    margin-right: 30px;
+}
+.blog-item h3 {
+    color: #000000;
+    font-size: 20.8px;
+    font-weight: 500;
+    line-height: 31.2px;
+    margin-top: 50px;
+}
+.blog-item p {
+    color: #767676;
+    font-size: 20.8px;
+    padding: 16px 0px 0px;
+    font-weight: 300;
+}
+/*############ blog section area end  ############*/
+/*############ testimonial section area start  ############*/
+.testimonial{
+    padding: 80px;
+    background: #F7F9FF;
+}
+.t-item{
+    width: 31%;
+    margin-right: 2%;
+}
+.t-item:last-child{
+    margin-right: 0;
+}
+.t-content{
+    background-color: #fff;
+    box-shadow: 3px 4px 38px 0px rgba(98, 120, 223, .2);
+    padding: 50px 40px;
+    box-sizing: border-box;
+    margin-bottom: 34px;
+    position: relative;
+    text-align: center;
+}
+.t-content::after{
+    content: "";
+    position: absolute;
+    left: 160px;
+    bottom: -20px;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #ffffff transparent transparent transparent;
+    
+}
+.t-content p{
+    color: #767676;
+    font-size: 20.8px;
+    line-height: 31.2px;
+    position: relative;
+    margin-bottom: 0;
+}
+.t-content p::before {
+    content: "";
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 81px;
+    opacity: 0.2;
+    left: 0px;
+}
+.user-img img {
+    border-radius: 50%;
+    width: 80px;
+    float: left;
+    margin-right: 20px;
+}
+.user-img {
+    width: 207px;
+    margin: auto;
+}
+.user-bio{
+    position: relative;
+    top: 10px;
+}
+.user-bio h4 {
+    font-weight: 500;
+    font-size: 20.8px;
+}
+
+/*############ testimonial section area end  ############*/
+/*############ contact section area start  ############*/
+.contact {
+    padding: 80px 0 20px;
+}
+.content-left-map{
+    width: 48%;
+}
+.content-right-form{
+    width: 48%;
+}
+.contact-form{
+    margin-top: 60px;
+}
+.contact-form input{
+    margin-bottom: 20px;
+}
+.contact-form .w-100{
+    width: 100%;
+}
+.contact-form .w-50{
+    width: 48%;
+}
+.contact-form button {
+    width: 100%;
+    margin: 20px 0;
+}
+.content-right-form h4 {
+    font-size: 25.6px;
+    margin: 20px 0;
+    font-weight: 500;
+}
+.content-right-form p {
+    color: #767676;
+    font-size: 22.8px;
+    font-weight: 300;
+}
+.footer {
+    margin-top: 30px;
+}
+
+
+/*############ contact section area end  ############*/
